@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="9" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-03T10:23:12 IST" name="Suite" finished-at="2022-10-03T10:23:12 IST" duration-ms="157">
+    <groups>
+    </groups>
+    <test started-at="2022-10-03T10:23:12 IST" name="HomeLoanTests" finished-at="2022-10-03T10:23:12 IST" duration-ms="157">
+      <class name="loanapplications.CarLoanApplicationTests">
+        <test-method signature="CarLoanLoginWeb()[pri:0, instance:loanapplications.CarLoanApplicationTests@4da4253]" started-at="2022-10-03T10:23:12 IST" name="CarLoanLoginWeb" finished-at="2022-10-03T10:23:12 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CarLoanLoginWeb -->
+        <test-method signature="CarLoanLoginAPI()[pri:0, instance:loanapplications.CarLoanApplicationTests@4da4253]" started-at="2022-10-03T10:23:12 IST" name="CarLoanLoginAPI" finished-at="2022-10-03T10:23:12 IST" depends-on-methods="loanapplications.CarLoanApplicationTests.CarLoanLoginWeb" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CarLoanLoginAPI -->
+      </class> <!-- loanapplications.CarLoanApplicationTests -->
+      <class name="loanapplications.HomeLoanApplicationTests">
+        <test-method signature="HomeLoanLoginAPI()[pri:0, instance:loanapplications.HomeLoanApplicationTests@2e55dd0c]" started-at="2022-10-03T10:23:12 IST" name="HomeLoanLoginAPI" finished-at="2022-10-03T10:23:12 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeLoanLoginAPI -->
+        <test-method signature="HomeLoanLoginMobile()[pri:0, instance:loanapplications.HomeLoanApplicationTests@2e55dd0c]" started-at="2022-10-03T10:23:12 IST" name="HomeLoanLoginMobile" finished-at="2022-10-03T10:23:12 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeLoanLoginMobile -->
+        <test-method signature="HomeLoanLoginWeb()[pri:0, instance:loanapplications.HomeLoanApplicationTests@2e55dd0c]" started-at="2022-10-03T10:23:12 IST" name="HomeLoanLoginWeb" finished-at="2022-10-03T10:23:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeLoanLoginWeb -->
+      </class> <!-- loanapplications.HomeLoanApplicationTests -->
+      <class name="loanapplications.PersonalLoanApplicationTests">
+        <test-method signature="PersonalLoanLoginAPI()[pri:0, instance:loanapplications.PersonalLoanApplicationTests@378542de]" started-at="2022-10-03T10:23:12 IST" name="PersonalLoanLoginAPI" finished-at="2022-10-03T10:23:12 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PersonalLoanLoginAPI -->
+        <test-method signature="PersonalLoanLoginMobile()[pri:0, instance:loanapplications.PersonalLoanApplicationTests@378542de]" started-at="2022-10-03T10:23:12 IST" name="PersonalLoanLoginMobile" finished-at="2022-10-03T10:23:12 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PersonalLoanLoginMobile -->
+        <test-method signature="PersonalLoanLoginWeb(java.lang.String)[pri:0, instance:loanapplications.PersonalLoanApplicationTests@378542de]" started-at="2022-10-03T10:23:12 IST" name="PersonalLoanLoginWeb" finished-at="2022-10-03T10:23:12 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Test on method PersonalLoanLoginWeb but has not been marked @Optional or defined
+in C:\java\testingdemos\TestNG-demo\testng-v5.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Test on method PersonalLoanLoginWeb but has not been marked @Optional or defined
+in C:\java\testingdemos\TestNG-demo\testng-v5.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PersonalLoanLoginWeb -->
+      </class> <!-- loanapplications.PersonalLoanApplicationTests -->
+    </test> <!-- HomeLoanTests -->
+  </suite> <!-- Suite -->
+</testng-results>
