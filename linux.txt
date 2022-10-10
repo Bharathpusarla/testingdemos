@@ -1,0 +1,17 @@
+# View available devices
+lsblk
+# Check if there is a file system on the volume
+# if the output shows 'data' then there is no file system
+sudo file -s /dev/xvdf
+# Create a file system
+# Skip this step, if there is already a filesystem
+sudo mkfs -t xfs /dev/xvdf
+# Create a directory where the device will be mounted
+sudo mkdir /data
+# Mount the device
+sudo mount /dev/xvdf /data
+# create a file in that mount directory
+cd /data
+sudo nano myfile + enter data + ctrl xY + enter
+cat myfile
+
